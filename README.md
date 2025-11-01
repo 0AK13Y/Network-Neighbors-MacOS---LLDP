@@ -1,4 +1,4 @@
-Install 
+This is build for Macbooks running Apple Silicon
 ## First we'll install brew
 	brew install https://raw.github.com/lldpd/lldpd/master/osx/lldpd.rb
 ## Second we are setting brew to be a enviormental varrible so you're not dependent on the directory to run brew 
