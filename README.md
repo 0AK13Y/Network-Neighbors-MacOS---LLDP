@@ -5,16 +5,16 @@ This will help with the install and setup of the lldpd
 Install 
 ## First we'll install brew
 	brew install https://raw.github.com/lldpd/lldpd/master/osx/lldpd.rb
-## Second we are setting brew to be a enviormental varrible so you're not dependent on the directory to run brew 
+## Second we are setting brew to be a enviroment so you're not dependent on the directory to run brew 
 	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile 
 	eval "$(/opt/homebrew/bin/brew shellenv)"
-## Third: If you just insatlled brew, you won't need to run the update command but it doesn't hurt to run it just in case
+## Third: If you just installed brew, you won't need to run the update command but it doesn't hurt to run it just in case
 	brew update
 ## Forth: We'll install the lldpd package and start the process
 	brew install lldpd
 	sudo brew services start lldpd
 
-##How to validate the service is running 
+## How to validate the service is running 
 	brew services list
 
 ##		aomit@OakleysMBPro ~ % lldpcli show neighbors
